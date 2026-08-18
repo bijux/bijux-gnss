@@ -29,7 +29,7 @@ jobs:
       - name: "Check out the repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: "Set up Rust"
-        uses: dtolnay/rust-toolchain@e97e2d8cc328f1b50210efc529dca0028893a2d9
+        uses: dtolnay/rust-toolchain@6c977a6ca4077a0ceb28ffbe03f59d46e9ac8772
         with:
           toolchain: "${{ env.RUST_TOOLCHAIN_VERSION }}"
           components: rustfmt
@@ -48,7 +48,7 @@ jobs:
       - name: "Install Linux build dependencies"
         run: "sudo apt-get update && sudo apt-get install --yes pkg-config libfontconfig1-dev libfreetype6-dev"
       - name: "Set up Rust"
-        uses: dtolnay/rust-toolchain@e97e2d8cc328f1b50210efc529dca0028893a2d9
+        uses: dtolnay/rust-toolchain@6c977a6ca4077a0ceb28ffbe03f59d46e9ac8772
         with:
           toolchain: "${{ env.RUST_TOOLCHAIN_VERSION }}"
           components: clippy
@@ -65,7 +65,7 @@ jobs:
       - name: "Check out the repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: "Set up Rust"
-        uses: dtolnay/rust-toolchain@e97e2d8cc328f1b50210efc529dca0028893a2d9
+        uses: dtolnay/rust-toolchain@6c977a6ca4077a0ceb28ffbe03f59d46e9ac8772
         with:
           toolchain: "${{ env.RUST_TOOLCHAIN_VERSION }}"
       - name: "Restore the Rust cache"
@@ -85,7 +85,7 @@ jobs:
       - name: "Install Linux build dependencies"
         run: "sudo apt-get update && sudo apt-get install --yes pkg-config libfontconfig1-dev libfreetype6-dev"
       - name: "Set up Rust"
-        uses: dtolnay/rust-toolchain@e97e2d8cc328f1b50210efc529dca0028893a2d9
+        uses: dtolnay/rust-toolchain@6c977a6ca4077a0ceb28ffbe03f59d46e9ac8772
         with:
           toolchain: "${{ env.RUST_TOOLCHAIN_VERSION }}"
       - name: "Restore the Rust cache"
