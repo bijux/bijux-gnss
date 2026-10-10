@@ -19,6 +19,8 @@ This page is a map, not an API reference or a scientific authority. Once you
 identify the owner, continue in that package's handbook, crate documentation,
 source, and tests.
 
+[Command workflows](bijux-gnss/index.md) · [Receiver execution](bijux-gnss-receiver/index.md)
+
 <!-- bijux-gnss-badges:generated:start -->
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-0F766E)](https://github.com/bijux/bijux-gnss/blob/main/LICENSE)
 [![CI](https://github.com/bijux/bijux-gnss/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bijux/bijux-gnss/actions/workflows/ci.yml?query=branch%3Amain)

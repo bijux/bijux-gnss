@@ -45,7 +45,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    call["receiver call completed"]
+    role_call["receiver call completed"]
     artifacts["run artifacts"]
     stages["stage evidence"]
     status{"claim supported?"}
@@ -53,7 +53,7 @@ flowchart LR
     degraded["degraded or refused"]
     persistence["infrastructure persistence"]
 
-    call --> artifacts --> stages --> status
+    role_call --> artifacts --> stages --> status
     status --> supported
     status --> degraded
     artifacts --> persistence

@@ -68,11 +68,12 @@ docs: docs-clean docs-require bijux-docs-sync ## Build documentation into artifa
 	@echo "GNSS documentation build complete"
 
 docs-check: docs-require bijux-docs-sync ## Validate source, shell, tables, and the strict site build
-	@$(MAKE) --no-print-directory bijux-docs-check
+	@$(MAKE) --no-print-directory bijux-docs-check DOCS_SITE_DIR=
 	@mkdir -p "$(DOCS_CACHE_DIR)" "$(DOCS_VENV_DIR)" "$(DOCS_PYCACHE_DIR)"
 	@$(DOCS_PYTHON_RUN) "$(TABLE_GUARD)" docs
 	@SITE_URL="$(SITE_URL)" $(DOCS_RUN) build --strict --quiet --config-file "$(MKDOCS_CFG)" --site-dir "$(DOCS_SITE_DIR)"
 	@$(MAKE) --no-print-directory docs-sync-root-icons
+	@$(MAKE) --no-print-directory bijux-docs-check
 	@$(MAKE) --no-print-directory docs-render-check
 	@$(MAKE) --no-print-directory docs-hygiene
 	@echo "GNSS documentation checks passed"

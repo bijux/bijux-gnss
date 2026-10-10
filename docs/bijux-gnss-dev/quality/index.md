@@ -75,7 +75,7 @@ negative cases when these semantics move.
 ```mermaid
 flowchart TD
     change["changed maintainer behavior"]
-    class{"failure consequence"}
+    failure_class{"failure consequence"}
     accept["bad repository record<br/>is accepted"]
     reject["valid record<br/>is rejected"]
     shell["automation consumes<br/>wrong output or status"]
@@ -87,12 +87,12 @@ flowchart TD
     guardrail["policy-owner proof"]
     decision["reviewable evidence<br/>with limits"]
 
-    change --> class
-    class --> accept --> fixtures
-    class --> reject --> fixtures
-    class --> shell --> integration
-    class --> persist --> io
-    class --> policy --> guardrail
+    change --> failure_class
+    failure_class --> accept --> fixtures
+    failure_class --> reject --> fixtures
+    failure_class --> shell --> integration
+    failure_class --> persist --> io
+    failure_class --> policy --> guardrail
     fixtures --> decision
     integration --> decision
     io --> decision
