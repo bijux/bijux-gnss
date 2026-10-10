@@ -9,6 +9,10 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 
 ## Unreleased
 
+### Changed
+
+- Adopt trusted manual publication admission and accepted shared documentation policy ([#119](https://github.com/bijux/bijux-gnss/pull/119)).
+
 ### Added
 
 - Added repository-specific contribution guidance and coordinated private
