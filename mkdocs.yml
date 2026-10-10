@@ -9,7 +9,12 @@ repo_name: bijux/bijux-gnss
 edit_uri: edit/main/docs/
 
 docs_dir: docs
-exclude_docs: badges.md
+exclude_docs: |
+  badges.md
+  /overrides/
+  /hooks/
+  /assets/styles/README.md
+  /assets/javascripts/shell/README.md
 site_dir: artifacts/docs/site
 watch:
   - docs
@@ -414,3 +419,17 @@ nav:
           - "Review Checklist": bijux-gnss-dev/quality/review-checklist.md
           - "Risk Register": bijux-gnss-dev/quality/risk-register.md
           - "Test Strategy": bijux-gnss-dev/quality/test-strategy.md
+
+extra_javascript:
+  - assets/javascripts/mermaid-init.js
+  - assets/javascripts/shell/theme-persistence.js
+  - assets/javascripts/shell/viewport-profile.js
+  - assets/javascripts/shell/nav-state.js
+  - assets/javascripts/shell/detail-tabs.js
+  - assets/javascripts/shell/nav-reveal.js
+  - assets/javascripts/shell/search-recovery.js
+  - assets/javascripts/shell/content-reflow.js
+  - assets/javascripts/external-links.js
+  - assets/javascripts/shell/bootstrap.js
+  - assets/javascripts/navigation-sync.js
+  - assets/javascripts/navigation/offsite-targets.js
