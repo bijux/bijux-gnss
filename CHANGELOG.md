@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 
 ### Changed
 
+- Resolve patched HTTP/2 and TLS dependencies for RUSTSEC-2026-0258 and RUSTSEC-2026-0285 ([#119](https://github.com/bijux/bijux-gnss/pull/119)).
+
 - Adopt trusted manual publication admission and accepted shared documentation policy ([#119](https://github.com/bijux/bijux-gnss/pull/119)).
 
 ### Added
