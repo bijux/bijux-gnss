@@ -29,12 +29,12 @@ jobs:
       - name: "Check out the repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: "Set up Rust"
-        uses: dtolnay/rust-toolchain@e97e2d8cc328f1b50210efc529dca0028893a2d9
+        uses: dtolnay/rust-toolchain@e2a55d2ffb04f378e9626c28d38b36d230d1e12f
         with:
           toolchain: "${{ env.RUST_TOOLCHAIN_VERSION }}"
           components: rustfmt
       - name: "Restore the Rust cache"
-        uses: Swatinem/rust-cache@c19371144df3bb44fab255c43d04cbc2ab54d1c4
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6
       - name: "Run repository formatting gate"
         run: "make fmt"
     if: "${{ github.event_name != 'pull_request' || github.event.pull_request.user.login != 'dependabot[bot]' }}"
@@ -48,12 +48,12 @@ jobs:
       - name: "Install Linux build dependencies"
         run: "sudo apt-get update && sudo apt-get install --yes pkg-config libfontconfig1-dev libfreetype6-dev"
       - name: "Set up Rust"
-        uses: dtolnay/rust-toolchain@e97e2d8cc328f1b50210efc529dca0028893a2d9
+        uses: dtolnay/rust-toolchain@e2a55d2ffb04f378e9626c28d38b36d230d1e12f
         with:
           toolchain: "${{ env.RUST_TOOLCHAIN_VERSION }}"
           components: clippy
       - name: "Restore the Rust cache"
-        uses: Swatinem/rust-cache@c19371144df3bb44fab255c43d04cbc2ab54d1c4
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6
       - name: "Run repository lint gate"
         run: "make lint"
     if: "${{ github.event_name != 'pull_request' || github.event.pull_request.user.login != 'dependabot[bot]' }}"
@@ -65,11 +65,11 @@ jobs:
       - name: "Check out the repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: "Set up Rust"
-        uses: dtolnay/rust-toolchain@e97e2d8cc328f1b50210efc529dca0028893a2d9
+        uses: dtolnay/rust-toolchain@e2a55d2ffb04f378e9626c28d38b36d230d1e12f
         with:
           toolchain: "${{ env.RUST_TOOLCHAIN_VERSION }}"
       - name: "Restore the Rust cache"
-        uses: Swatinem/rust-cache@c19371144df3bb44fab255c43d04cbc2ab54d1c4
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6
       - name: "Install Rust audit tools"
         run: "cargo install --locked cargo-deny --version \"${{ env.CARGO_DENY_VERSION }}\" && cargo install --locked cargo-audit --version \"${{ env.CARGO_AUDIT_VERSION }}\""
       - name: "Run repository audit gate"
@@ -85,11 +85,11 @@ jobs:
       - name: "Install Linux build dependencies"
         run: "sudo apt-get update && sudo apt-get install --yes pkg-config libfontconfig1-dev libfreetype6-dev"
       - name: "Set up Rust"
-        uses: dtolnay/rust-toolchain@e97e2d8cc328f1b50210efc529dca0028893a2d9
+        uses: dtolnay/rust-toolchain@e2a55d2ffb04f378e9626c28d38b36d230d1e12f
         with:
           toolchain: "${{ env.RUST_TOOLCHAIN_VERSION }}"
       - name: "Restore the Rust cache"
-        uses: Swatinem/rust-cache@c19371144df3bb44fab255c43d04cbc2ab54d1c4
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6
       - name: "Install cargo-nextest"
         run: "cargo install --locked cargo-nextest --version \"${{ env.CARGO_NEXTEST_VERSION }}\""
       - name: "Run repository test gate"

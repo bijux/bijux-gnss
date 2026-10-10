@@ -9,7 +9,12 @@ repo_name: bijux/bijux-gnss
 edit_uri: edit/main/docs/
 
 docs_dir: docs
-exclude_docs: badges.md
+exclude_docs: |
+  badges.md
+  /overrides/
+  /hooks/
+  /assets/styles/README.md
+  /assets/javascripts/shell/README.md
 site_dir: artifacts/docs/site
 watch:
   - docs
