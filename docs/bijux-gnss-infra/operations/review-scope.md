@@ -51,18 +51,18 @@ changing one path join can be more consequential than adding an isolated helper.
 
 ```mermaid
 flowchart LR
-    call["infrastructure call"]
+    role_call["infrastructure call"]
     files["directories and JSON records"]
     history["shared run history"]
     cache["process-wide run-context cache"]
     process["Git, toolchain, and CPU probes"]
     env["process environment"]
 
-    call --> files
-    call --> history
-    call --> cache
-    call --> process
-    call --> env
+    role_call --> files
+    role_call --> history
+    role_call --> cache
+    role_call --> process
+    role_call --> env
 ```
 
 - Creating a run layout writes directories.
