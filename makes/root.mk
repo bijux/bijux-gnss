@@ -11,3 +11,5 @@ include $(ROOT_MK_DIR)/contracts.mk
 
 BIJUX_MAKE_COMPONENTS := rust
 include $(CURDIR)/.bijux/shared/bijux-makes/bijux.mk
+
+include makes/docs-publication.mk
