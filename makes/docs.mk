@@ -124,7 +124,3 @@ docs-hygiene: ## Verify documentation output stays under artifacts
 	@test ! -e site || (echo "ERROR: root site/ is forbidden" && exit 1)
 	@test ! -e .cache || (echo "ERROR: root .cache/ is forbidden" && exit 1)
 	@test ! -d docs/artifacts || (echo "ERROR: docs/artifacts/ is forbidden" && exit 1)
-
-gh-docs-install: docs-install ## Install documentation tools for the Pages workflow
-gh-docs-build: docs-check ## Build and validate the Pages artifact
-gh-docs-verify: docs-render-check ## Verify the Pages artifact
