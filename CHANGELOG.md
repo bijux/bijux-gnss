@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 
 ### Changed
 
+- Keep repository-link warnings within the documentation header while preserving their accessible descriptions ([#125](https://github.com/bijux/bijux-gnss/pull/125)).
+
 - Bind native documentation dates to committed source, permit Bijux-owned workflow badges, and clarify publication verification ([#124](https://github.com/bijux/bijux-gnss/pull/124)).
 
 - Resolve patched HTTP/2 and TLS dependencies for RUSTSEC-2026-0258 and RUSTSEC-2026-0285 ([#119](https://github.com/bijux/bijux-gnss/pull/119)).
