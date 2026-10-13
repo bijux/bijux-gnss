@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 
 ### Changed
 
+- Adopt accepted reader preference recovery, inert native search, truthful clipboard feedback, patched publication dependencies and authenticated workflow actions ([#127](https://github.com/bijux/bijux-gnss/pull/127)).
+
 - Allow complete manual documentation admission and independent verification within the shared 60-minute build budget; retain the exact documentation source and protected deployment checks ([#126](https://github.com/bijux/bijux-gnss/pull/126)).
 
 - Keep repository-link warnings within the documentation header while preserving their accessible descriptions ([#125](https://github.com/bijux/bijux-gnss/pull/125)).
