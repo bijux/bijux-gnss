@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 
 ### Changed
 
+- Patch Rustls certificate validation, WebPKI verification and platform trust roots.
+
 - Qualify current JSON Schema, Schemars, property-testing and Rust dependency
   patches on Rust 1.88; consume patched documentation sanitization and accepted
   shared workflow action pins.
