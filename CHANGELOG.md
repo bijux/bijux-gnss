@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 
 ### Changed
 
+- Require the patched Tokio runtime with corrected asynchronous descriptor safety.
+
 - Patch Rustls certificate validation, WebPKI verification and platform trust roots.
 
 - Qualify current JSON Schema, Schemars, property-testing and Rust dependency
