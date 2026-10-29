@@ -11,6 +11,14 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 
 ### Changed
 
+- Require the patched Tokio runtime with corrected asynchronous descriptor safety.
+
+- Patch Rustls certificate validation, WebPKI verification and platform trust roots.
+
+- Qualify current JSON Schema, Schemars, property-testing and Rust dependency
+  patches on Rust 1.88; consume patched documentation sanitization and accepted
+  shared workflow action pins.
+
 - Adopt accepted reader preference recovery, inert native search, truthful clipboard feedback, patched publication dependencies and authenticated workflow actions ([#127](https://github.com/bijux/bijux-gnss/pull/127)).
 
 - Allow complete manual documentation admission and independent verification within the shared 60-minute build budget; retain the exact documentation source and protected deployment checks ([#126](https://github.com/bijux/bijux-gnss/pull/126)).
