@@ -11,6 +11,9 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 
 ### Changed
 
+- Consume accepted Ruby and uv workflow action pins and filtered full-history
+  checkouts while preserving the frozen documentation publication source.
+
 - Require the patched Tokio runtime with corrected asynchronous descriptor safety.
 
 - Patch Rustls certificate validation, WebPKI verification and platform trust roots.
