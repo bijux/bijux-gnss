@@ -14,6 +14,8 @@ This project adheres to [Semantic Versioning](https://semver.org) and the
 - Qualify TOML 1.2.0 parser and writer dependencies and consume accepted Ruby
   and GitHub release action pins from the canonical shared standards while
   preserving the independent documentation source ([#149](https://github.com/bijux/bijux-gnss/pull/149)).
+- Resolve the test filesystem dependency to Rustix 1.1.6, removing the
+  extended-attribute buffer unsoundness advisory RUSTSEC-2026-0486 ([#149](https://github.com/bijux/bijux-gnss/pull/149)).
 
 - Consume accepted Ruby and uv workflow action pins and filtered full-history
   checkouts while preserving the frozen documentation publication source.
